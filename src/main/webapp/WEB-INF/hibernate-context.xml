@@ -9,15 +9,15 @@
                            http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
     <!-- Local data source -->
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close"
-          p:driverClass="com.mysql.jdbc.Driver"
-          p:jdbcUrl="jdbc:mysql://127.0.0.1:3306/ibubble_drink?useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8"
-          p:user="root"
-          p:password=""
-          p:idleConnectionTestPeriod="60"
-          p:maxPoolSize="100"
-          p:maxStatements="50"
-          p:minPoolSize="10"/>
+    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close"-->
+          <!--p:driverClass="com.mysql.jdbc.Driver"-->
+          <!--p:jdbcUrl="jdbc:mysql://127.0.0.1:3306/ibubble_drink?useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8"-->
+          <!--p:user="root"-->
+          <!--p:password=""-->
+          <!--p:idleConnectionTestPeriod="60"-->
+          <!--p:maxPoolSize="100"-->
+          <!--p:maxStatements="50"-->
+          <!--p:minPoolSize="10"/>-->
 
     <!-- Jelastic datasource -->
     <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close"-->
@@ -29,6 +29,17 @@
           <!--p:maxPoolSize="100"-->
           <!--p:maxStatements="50"-->
           <!--p:minPoolSize="10"/>-->
+
+    <!-- OpenShift datasource -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close"
+    p:driverClass="com.mysql.jdbc.Driver"
+    p:jdbcUrl="jdbc:mysql://127.5.93.2:3306/drink?useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8"
+    p:user="root"
+    p:password="Pax84HQ1I1"
+    p:idleConnectionTestPeriod="60"
+    p:maxPoolSize="100"
+    p:maxStatements="50"
+    p:minPoolSize="10"/>
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>

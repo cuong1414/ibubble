@@ -31,9 +31,9 @@
              style="max-width: 120px; margin-top: 10px; margin-bottom: 10px">
         <address>
             <strong>Ibubble Shop</strong><br>
-            9820 Gulf Free way Suite A9 <br>
+            9820 Gulf Freeway Suite A9 <br>
             Houston TX 77034<br>
-            <abbr title="Phone">Phone number:</abbr>
+            <abbr title="Phone">Phone number:</abbr> +1 832-288-0709
         </address>
     </div>
 

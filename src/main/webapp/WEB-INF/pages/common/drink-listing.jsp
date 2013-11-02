@@ -34,7 +34,7 @@
                                         <p>${drink.description}</p>
 
                                         <p>
-                                        <h4 class="text-center" style="color:#46a546">
+                                        <h4 class="text-center" style="color:#46a546; font-size: 30px">
                                             <fmt:setLocale value="en_US"/>
                                             <fmt:formatNumber value="${drink.sellingPrice}" type="currency" currencySymbol="$"
                                                               maxFractionDigits="2"/>

@@ -14,17 +14,26 @@
     <title>Welcome to Ibubble</title>
     <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/magic-bootstrap.css" type="text/css"/>
     <%--<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/bootstrap-theme.css" type="text/css"/>--%>
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/bootstrap-magnify.min.css"
-          type="text/css">
+    <%--<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/bootstrap-magnify.min.css"--%>
+          <%--type="text/css">--%>
     <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/custom.css" type="text/css">
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body style="background-image: url(http://img34.imageshack.us/img34/4609/80uu.jpg)">
 
-<div class="container" style="margin-top: 30px; margin-bottom: 30px; background-color: #ffffff">
+<div class="container box-shadow" style="margin-top: 30px; margin-bottom: 30px; background-color: #ffffff">
     <!-- Banner -->
-    <img src="${pageContext.request.contextPath}/resources/img/ibubble-banner.png"
-         style="max-width: 120px; margin-top: 10px; margin-bottom: 10px">
+    <div>
+        <img src="${pageContext.request.contextPath}/resources/img/ibubble-banner.png"
+             style="max-width: 120px; margin-top: 10px; margin-bottom: 10px">
+        <address>
+            <strong>Ibubble Shop</strong><br>
+            9820 Gulf Free way Suite A9 <br>
+            Houston TX 77034<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+    </div>
+
 
     <!-- Navigation bar -->
     <jsp:include page="common/navigation-bar.jsp"></jsp:include>

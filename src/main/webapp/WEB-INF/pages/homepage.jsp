@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/custom.css" type="text/css">
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
-<body style="background-color: #81C245">
+<body style="background-image: url(http://img34.imageshack.us/img34/4609/80uu.jpg)">
 
 <div class="container" style="margin-top: 30px; margin-bottom: 30px; background-color: #ffffff">
     <!-- Banner -->

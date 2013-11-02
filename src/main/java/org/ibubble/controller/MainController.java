@@ -66,6 +66,7 @@ public class MainController {
     @RequestMapping(value = "/store-info", method = RequestMethod.GET)
     public String navigateStoreInformationPage(Model model) {
         // Navigate to store information tab.
+        model.addAttribute(ConstantManager.CATEGORY_LIST_MODEL_NAME, categoryService.getAllActive());
         model.addAttribute(ConstantManager.CONTENT_PAGE_MODEL_NAME, "store-information");
         return "homepage";
     }

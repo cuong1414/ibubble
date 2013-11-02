@@ -62,4 +62,11 @@ public class MainController {
         }
         return "redirect:" + ConstantManager.MAIN_CONTROLLER_MAPPING_URL;
     }
+
+    @RequestMapping(value = "/store-info", method = RequestMethod.GET)
+    public String navigateStoreInformationPage(Model model) {
+        // Navigate to store information tab.
+        model.addAttribute(ConstantManager.CONTENT_PAGE_MODEL_NAME, "store-information");
+        return "homepage";
+    }
 }

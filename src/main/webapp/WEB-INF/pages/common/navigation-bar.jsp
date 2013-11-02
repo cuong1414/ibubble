@@ -11,7 +11,7 @@
 <div class="navbar navbar-default" role="navigation">
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-            <li><a href="#" style="font-size: 22px" class="nav-item">Store
+            <li><a href="${pageContext.request.contextPath}<%=ConstantManager.MAIN_CONTROLLER_MAPPING_URL%>/store-info" style="font-size: 22px" class="nav-item">Store
                 information</a></li>
             <li class="dropdown">
                 <!-- Button group + sub-menu -->

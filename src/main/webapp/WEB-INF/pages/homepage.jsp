@@ -12,12 +12,15 @@
 <head>
     <meta charset="utf-8">
     <title>Welcome to Ibubble</title>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/bookblock.css" type="text/css">
     <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/magic-bootstrap.css" type="text/css"/>
     <%--<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/bootstrap-theme.css" type="text/css"/>--%>
     <%--<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/bootstrap-magnify.min.css"--%>
           <%--type="text/css">--%>
     <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/custom.css" type="text/css">
+
     <link rel="shortcut icon" href="img/favicon.ico">
+
 </head>
 <body style="background-image: url(http://img34.imageshack.us/img34/4609/80uu.jpg)">
 
@@ -39,7 +42,7 @@
     <jsp:include page="common/navigation-bar.jsp"></jsp:include>
 
     <!-- Marketting area -->
-    <jsp:include page="common/banner.jsp"></jsp:include>
+    <%--<jsp:include page="common/banner.jsp"></jsp:include>--%>
 
     <!-- Content Page -->
     <div class="container span9 well">
@@ -58,6 +61,9 @@
 <script src="<%= request.getContextPath() %>/resources/js/jquery-2.0.3.min.js"></script>
 <script src="<%= request.getContextPath() %>/resources/js/bootstrap.js"></script>
 <script src="<%= request.getContextPath() %>/resources/js/bootstrap-magnify.min.js"></script>
+<script src="<%= request.getContextPath() %>/resources/js/modernizr.custom.js"></script>
+<script src="<%= request.getContextPath() %>/resources/js/jquerypp.custom.js"></script>
+<script src="<%= request.getContextPath() %>/resources/js/jquery.bookblock.js"></script>
 <script src="<%= request.getContextPath() %>/resources/js/custom.js"></script>
 </body>
 </html>

@@ -33,7 +33,7 @@
             <strong>Ibubble Shop</strong><br>
             9820 Gulf Free way Suite A9 <br>
             Houston TX 77034<br>
-            <abbr title="Phone">P:</abbr> (123) 456-7890
+            <abbr title="Phone">Phone number:</abbr>
         </address>
     </div>
 

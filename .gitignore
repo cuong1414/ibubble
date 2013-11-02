@@ -5,7 +5,6 @@
 *.war
 *.ear
 
-#Directory#
-.idea/
-openshift/
-.git/
+.idea/*
+openshift/*
+.git/*

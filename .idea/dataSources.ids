@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="ibubble" product="MySQL" version="5.6.10" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.24 ( Revision: ${bzr.revision-id} )" uuid="4bfda804-779e-4c2a-a303-0fd0de2231ee">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://127.0.0.1:3306/ibubble_drink</jdbc-url>
+    <user-name>root</user-name>
+    <schema-pattern>ibubble_drink.*</schema-pattern>
+    <default-dialect>MySQL</default-dialect>
+    <driver-properties>
+      <property name="characterEncoding" value="UTF-8"/>
+      <property name="characterSetResults" value="UTF-8"/>
+    </driver-properties>
+    <libraries>
+      <library>
+        <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar!/</url>
+      </library>
+    </libraries>
+    <schema name="" catalog="ibubble_drink"/>
+    <table name="category" schema="" catalog="ibubble_drink" type="TABLE">
+      <column name="Active" sqlType="BIT" length="1" precision="0" nullable="false" jdbcType="-7" def="YicxJw=="/>
+      <column name="Order" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Url" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Title" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <exported-key name="FK_CategoryID_Discount" table="discount" schema="" catalog="ibubble_drink" columns="CategoryID"/>
+      <exported-key name="FK_CategoryID_Drinking" table="drinking" schema="" catalog="ibubble_drink" columns="CategoryId"/>
+    </table>
+    <table name="discount" schema="" catalog="ibubble_drink" type="TABLE">
+      <column name="Active" sqlType="BIT" length="1" precision="0" nullable="false" jdbcType="-7" def="YicxJw=="/>
+      <column name="DiscountTypeID" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="CategoryID" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="ProductID" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="FK_CategoryID_Discount" columns="CategoryID" ref-table="category" ref-schema="" ref-catalog="ibubble_drink" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_DiscountTypeID_Discount" columns="DiscountTypeID" ref-table="discounttype" ref-schema="" ref-catalog="ibubble_drink" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_DrinkingID_Discount" columns="ProductID" ref-table="drinking" ref-schema="" ref-catalog="ibubble_drink" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="discounttype" schema="" catalog="ibubble_drink" type="TABLE">
+      <column name="Description" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <exported-key name="FK_DiscountTypeID_Discount" table="discount" schema="" catalog="ibubble_drink" columns="DiscountTypeID"/>
+    </table>
+    <table name="drinking" schema="" catalog="ibubble_drink" type="TABLE">
+      <column name="Active" sqlType="BIT" length="1" precision="0" nullable="false" jdbcType="-7" def="YicxJw=="/>
+      <column name="CategoryId" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="ImageUrl" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="SellingPrice" sqlType="FLOAT" length="12" precision="0" nullable="false" jdbcType="7"/>
+      <column name="Description" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="Title" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="ID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="FK_CategoryID_Drinking" columns="CategoryId" ref-table="category" ref-schema="" ref-catalog="ibubble_drink" ref-columns="ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_DrinkingID_Discount" table="discount" schema="" catalog="ibubble_drink" columns="ProductID"/>
+    </table>
+  </data-source>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1196068886">
+    <data-source source="LOCAL" name="ibubble" product="MySQL" version="5.6.10" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.24 ( Revision: ${bzr.revision-id} )" uuid="4bfda804-779e-4c2a-a303-0fd0de2231ee">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/ibubble_drink</jdbc-url>
+      <user-name>root</user-name>
+      <schema-pattern>ibubble_drink.*</schema-pattern>
+      <default-dialect>MySQL</default-dialect>
+      <driver-properties>
+        <property name="characterEncoding" value="UTF-8" />
+        <property name="characterSetResults" value="UTF-8" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.24/mysql-connector-java-5.1.24.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c45a27f8-8ede-4156-a612-6a9d06ebacf7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ibubble2.iml" afterPath="$PROJECT_DIR$/ibubble2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ibubble2.iws" />
@@ -35,8 +37,12 @@
     <file path="/custom.css" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1381530099535" ignored="false" />
     <file path="/banner.jsp" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1381566947998" ignored="false" />
     <file path="/hibernate-context.xml" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1381561617966" ignored="false" />
-    <file path="/Dummy.txt" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1383372569827" ignored="false" />
-    <file path="/pom.xml" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1383372391736" ignored="false" />
+    <file path="/Dummy.txt" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1383372892398" ignored="false" />
+    <file path="/pom.xml" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1383373140777" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/artifacts/ibubble2_war_exploded.xml" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1383373130870" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/artifacts/ibubble2_war.xml" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1383373130870" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/resources/css/custom.css" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1383373130874" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" changelist="c45a27f8-8ede-4156-a612-6a9d06ebacf7" time="1383373130874" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +156,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="18" selection-start="998" selection-end="998" vertical-scroll-proportion="0.74876845">
+            <state line="142" column="31" selection-start="5002" selection-end="5002" vertical-scroll-proportion="0.41379312">
               <folding />
             </state>
           </provider>
@@ -218,8 +224,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate-context.xml" />
         <option value="$PROJECT_DIR$/webapps/pom2.xml" />
         <option value="$PROJECT_DIR$/pom2.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -301,20 +307,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ibubble2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ibubble2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ibubble2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -631,7 +623,11 @@
       <created>1383372592508</created>
       <updated>1383372592508</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FixReadme">
+      <created>1383372943850</created>
+      <updated>1383372943850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -711,11 +707,11 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix pom for OpenShift" />
+    <option name="LAST_COMMIT_MESSAGE" value="FixReadme" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
     <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
@@ -726,6 +722,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Fix pom for OpenShift" />
+    <MESSAGE value="FixReadme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -843,7 +840,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="18" selection-start="998" selection-end="998" vertical-scroll-proportion="0.74876845">
+        <state line="142" column="31" selection-start="5002" selection-end="5002" vertical-scroll-proportion="0.41379312">
           <folding />
         </state>
       </provider>

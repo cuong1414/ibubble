@@ -33,7 +33,7 @@
     <!-- OpenShift datasource -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close"
     p:driverClass="com.mysql.jdbc.Driver"
-    p:jdbcUrl="jdbc:mysql://127.5.93.2:3306/drink?useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8"
+    p:jdbcUrl="jdbc:mysql://127.5.93.2:3306/ibubble_drink?useUnicode=true&amp;characterEncoding=UTF-8&amp;characterSetResults=UTF-8"
     p:user="adminWWK5GLu"
     p:password="2KZ1qPK-ytvW"
     p:idleConnectionTestPeriod="60"

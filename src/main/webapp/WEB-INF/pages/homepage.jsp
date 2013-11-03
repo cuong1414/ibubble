@@ -19,7 +19,7 @@
           <%--type="text/css">--%>
     <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/custom.css" type="text/css">
 
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="<%= request.getContextPath() %>/resources/img/favicon_32x32.ico">
 
 </head>
 <body style="background-image: url(http://img34.imageshack.us/img34/4609/80uu.jpg)">

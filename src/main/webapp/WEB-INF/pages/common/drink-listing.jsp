@@ -14,7 +14,7 @@
         <div class="bb-item" style="display: none;">
             <c:set var="maxindex" value="${status.index + 3}"></c:set>
             <c:forEach step="2" begin="${status.index}" end="${maxindex}" varStatus="status2">
-                <div class="bb-custom-side" style="background-image: url(${pageContext.request.contextPath}/resources/img/menu-page.jpg)">
+                <div class="bb-custom-side round-corner" style="background-image: url(${pageContext.request.contextPath}/resources/img/menu-page.jpg)">
                     <c:set var="maxindex2" value="${status2.index + 1}"></c:set>
                     <c:forEach step="1" begin="${status2.index}" end="${maxindex2}" varStatus="status3">
                         <c:set var="drink" value="${listDrink[status3.index]}"></c:set>

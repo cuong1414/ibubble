@@ -2853,6 +2853,17 @@ input[type="button"].btn-block {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   cursor: not-allowed;
 }
+
+/*Add open dropdown on hover*/
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/****************************/
+
 .open > .dropdown-menu {
   display: block;
 }

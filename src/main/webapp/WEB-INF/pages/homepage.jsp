@@ -26,15 +26,19 @@
 
 <div class="container box-shadow" style="margin-top: 30px; margin-bottom: 30px; background-color: #ffffff">
     <!-- Banner -->
-    <div>
-        <img src="${pageContext.request.contextPath}/resources/img/ibubble-banner.png"
-             style="max-width: 120px; margin-top: 10px; margin-bottom: 10px">
-        <address>
-            <strong>Ibubble Shop</strong><br>
-            9820 Gulf Freeway Suite A9 <br>
-            Houston TX 77034<br>
-            <abbr title="Phone">Phone number:</abbr> +1 832-288-0709
-        </address>
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <img src="${pageContext.request.contextPath}/resources/img/ibubble-banner.png"
+                 style="max-width: 120px; margin-top: 10px; margin-bottom: 10px">
+        </div>
+        <div class="col-sm-4 col-md-8" style="text-align: right">
+            <address>
+                <strong>Ibubble Shop</strong><br>
+                9820 Gulf Freeway Suite A9 <br>
+                Houston TX 77034<br>
+                <abbr title="Phone">Phone number:</abbr> +1 832-288-0709
+            </address>
+        </div>
     </div>
 
 

@@ -14,13 +14,13 @@
         <div class="bb-item" style="display: none;">
             <c:set var="maxindex" value="${status.index + 3}"></c:set>
             <c:forEach step="2" begin="${status.index}" end="${maxindex}" varStatus="status2">
-                <div class="bb-custom-side">
+                <div class="bb-custom-side" style="background-image: url(${pageContext.request.contextPath}/resources/img/menu-page.jpg)">
                     <c:set var="maxindex2" value="${status2.index + 1}"></c:set>
                     <c:forEach step="1" begin="${status2.index}" end="${maxindex2}" varStatus="status3">
                         <c:set var="drink" value="${listDrink[status3.index]}"></c:set>
                         <c:if test="${not empty drink}">
                             <div class="col-sm-4 col-md-6">
-                                <div class="thumbnail" style="margin-bottom: 15px">
+                                <div class="thumbnail" style="margin-bottom: 15px; background: transparent; border: transparent">
                                     <!-- IMAGE CONTAINER -->
 
                                     <img src='${pageContext.request.contextPath}/resources/img/${drink.imageUrl}' alt="${drink.imageUrl}"
@@ -29,16 +29,16 @@
                                     <!-- CAPTION -->
                                     <div class="caption">
                                         <!-- PRODUCT TITLE -->
-                                        <h3 class="text-center">${drink.title}</h3>
+                                        <h3 class="text-center" style="color: #000000">${drink.title}</h3>
 
-                                        <p>${drink.description}</p>
+                                        <%--<p>${drink.description}</p>--%>
 
                                         <p>
-                                        <h4 class="text-center" style="color:#46a546; font-size: 30px">
-                                            <fmt:setLocale value="en_US"/>
-                                            <fmt:formatNumber value="${drink.sellingPrice}" type="currency" currencySymbol="$"
-                                                              maxFractionDigits="2"/>
-                                        </h4>
+                                            <h4 class="text-center" style="color: blue; font-size: 30px">
+                                                <fmt:setLocale value="en_US"/>
+                                                <fmt:formatNumber value="${drink.sellingPrice}" type="currency" currencySymbol="$"
+                                                                  maxFractionDigits="2"/>
+                                            </h4>
                                         </p>
                                     </div>
                                         <%--<!-- Button -->--%>
